@@ -65,7 +65,11 @@ def opredel(matrix):
 	return O_matrix
 
 def run(matrix):
+<<<<<<< HEAD
+	vibor = int(input("Выберете действие:\n  Возвести в квадрат - 1\n  Транспонировать - 2\n  Найти определитель(только для квадратной) - 3\nВаш выбор: "))
+=======
 	vibor = int(input("Выберете действие:\n  1 - Возвести в квадрат \n  2 - Транспонировать \n  3 - Найти определитель(только для квадратной) \nВаш выбор: "))
+>>>>>>> ca89e4e74f4653afef27bc137d24b27b617cdd53
 	if vibor != 1 and vibor != 2 and vibor != 3:
 		print("Вы выбрали что-то не то)")
 	elif vibor == 1:
@@ -80,7 +84,11 @@ def run(matrix):
 			print("-"*20, "\nВаша матрица возведённая в квадрат: ")
 			for i in range(len(kvadrat(matrix))):
 				print(kvadrat(matrix)[i])
+<<<<<<< HEAD
+			print(' Прошло времени : ', datetime.now() - start_time)
+=======
 			print('\n   Прошло времени : ', datetime.now() - start_time)
+>>>>>>> ca89e4e74f4653afef27bc137d24b27b617cdd53
 		else:
 			print("Ваша матрица не может быть возведена в квадрат")
 	elif vibor == 2:
@@ -95,7 +103,11 @@ def run(matrix):
 			print("-"*20, "\nВаша транспонированная матрица: ")
 			for i in range(len(transpon(matrix))):
 				print(transpon(matrix)[i])
+<<<<<<< HEAD
+			print(' Прошло времени : ', datetime.now() - start_time)
+=======
 			print('\n   Прошло времени : ', datetime.now() - start_time)
+>>>>>>> ca89e4e74f4653afef27bc137d24b27b617cdd53
 		else:
 			print("Ваша матрица не квадратная")
 	elif vibor == 3:
@@ -109,7 +121,11 @@ def run(matrix):
 			start_time = datetime.now()
 			print("-"*20, "\nВаш детрименант матрицы: ")
 			print(opredel(matrix))
+<<<<<<< HEAD
+			print(' Прошло времени : ', datetime.now() - start_time)
+=======
 			print('\n   Прошло времени : ', datetime.now() - start_time)
+>>>>>>> ca89e4e74f4653afef27bc137d24b27b617cdd53
 		else:
 			print("Ваша матрица не квадратная")
 	repeat = input('\nХотите ещё действия с этой матрицей? \n')
